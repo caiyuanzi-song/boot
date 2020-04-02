@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>boot-web</module>
+        <module>boot-jpa</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

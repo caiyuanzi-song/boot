@@ -8,6 +8,7 @@
         <module>boot-jpa</module>
         <module>boot-test</module>
         <module>boot-interceptor</module>
+        <module>boot-filter</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

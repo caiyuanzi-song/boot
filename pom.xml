@@ -6,6 +6,8 @@
     <modules>
         <module>boot-web</module>
         <module>boot-jpa</module>
+        <module>boot-test</module>
+        <module>boot-interceptor</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

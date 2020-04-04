@@ -9,6 +9,7 @@
         <module>boot-test</module>
         <module>boot-interceptor</module>
         <module>boot-filter</module>
+        <module>boot-validator</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

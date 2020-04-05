@@ -11,3 +11,5 @@ SpringBoot2.0实战（4）配置拦截器
 SpringBoot2.0实战（5）配置Filter过滤器
 # boot-validator
 SpringBoot2.0实战（6）整合hibernate-validator进行参数校验
+# boot-map-struct
+SpringBoot2.0实战（7）整合MapStruct优雅地复制属性

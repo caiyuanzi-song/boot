@@ -10,6 +10,7 @@
         <module>boot-interceptor</module>
         <module>boot-filter</module>
         <module>boot-validator</module>
+        <module>boot-map-struct</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

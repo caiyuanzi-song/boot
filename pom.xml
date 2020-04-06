@@ -12,6 +12,7 @@
         <module>boot-validator</module>
         <module>boot-map-struct</module>
         <module>boot-swagger</module>
+        <module>boot-mybatis-plus</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

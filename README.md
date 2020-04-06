@@ -17,3 +17,5 @@ SpringBoot2.0实战（7）整合MapStruct优雅地复制属性
 SpringBoot2.0实战（8）整合Swagger2自动生成API文档
 # boot-mybatis-plus
 SpringBoot2.0实战（9）整合Mybatis-plus完成CURD
+# boot-fluent-validator
+SpringBoot2.0实战（10）整合fluent-validator优雅业务校验

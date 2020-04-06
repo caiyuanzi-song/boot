@@ -13,3 +13,5 @@ SpringBoot2.0实战（5）配置Filter过滤器
 SpringBoot2.0实战（6）整合hibernate-validator进行参数校验
 # boot-map-struct
 SpringBoot2.0实战（7）整合MapStruct优雅地复制属性
+# boot-swagger
+SpringBoot2.0实战（8）整合Swagger2自动生成API文档

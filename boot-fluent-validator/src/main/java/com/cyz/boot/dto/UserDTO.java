@@ -1,5 +1,7 @@
 package com.cyz.boot.dto;
 
+import com.baidu.unbiz.fluentvalidator.annotation.FluentValidate;
+import com.cyz.boot.validator.SexValidator;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.validator.constraints.Length;
@@ -39,4 +41,6 @@ public class UserDTO {
     private Integer level;
 
 
+    @FluentValidate({SexValidator.class})
+    private Integer sex;
 }

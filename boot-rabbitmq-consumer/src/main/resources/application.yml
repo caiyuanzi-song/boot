@@ -1,0 +1,17 @@
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+#    发送方消息确认：已发送到交换机Exchange
+    publisher-confirms: true
+#    发送方消息确认：已发送到Queue
+    publisher-returns: true
+    listener:
+      type: simple
+      direct:
+        acknowledge-mode: manual
+
+server:
+  port: 8021

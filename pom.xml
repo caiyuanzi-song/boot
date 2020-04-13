@@ -14,6 +14,8 @@
         <module>boot-swagger</module>
         <module>boot-mybatis-plus</module>
         <module>boot-fluent-validator</module>
+        <module>boot-rabbitmq</module>
+        <module>boot-rabbitmq-consumer</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

@@ -19,3 +19,7 @@ SpringBoot2.0实战（8）整合Swagger2自动生成API文档
 SpringBoot2.0实战（9）整合Mybatis-plus完成CURD
 # boot-fluent-validator
 SpringBoot2.0实战（10）整合fluent-validator优雅业务校验
+# boot-rabbitmq
+SpringBoot2.0实战（11）整合RabbitMQ之ACK消息确认-生产者
+# boot-rabbitmq-consumer
+SpringBoot2.0实战（11）整合RabbitMQ之ACK消息确认-消费者

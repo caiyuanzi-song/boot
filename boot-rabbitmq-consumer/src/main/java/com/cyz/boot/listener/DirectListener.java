@@ -18,10 +18,10 @@ import java.util.Map;
 @RabbitListener(queues = "TestDirectQueue")
 public class DirectListener {
 
-//    @RabbitHandler
-//    public void process(Map msg){
-//        System.out.println("DirectListener收到的消息是 ："+msg.toString());
-//    }
+    @RabbitHandler
+    public void process(Map msg){
+        System.out.println("DirectListener收到的消息是 ："+msg.toString());
+    }
 
     @RabbitHandler
     public void process(Map obj, Channel channel, Message message) throws IOException{

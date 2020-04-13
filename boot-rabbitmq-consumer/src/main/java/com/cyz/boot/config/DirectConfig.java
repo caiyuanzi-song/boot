@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
  * @Description:
  */
 @Configuration
-public class ConsumerConfig {
+public class DirectConfig {
 
     @Bean
     public Queue TestDirectQueue(){

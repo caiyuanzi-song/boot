@@ -8,6 +8,7 @@ spring:
     publisher-confirms: true
 #    发送方消息确认：已发送到Queue
     publisher-returns: true
+#    消费方消息确认：手动确认
     listener:
       type: simple
       direct:

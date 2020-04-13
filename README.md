@@ -21,5 +21,7 @@ SpringBoot2.0实战（9）整合Mybatis-plus完成CURD
 SpringBoot2.0实战（10）整合fluent-validator优雅业务校验
 # boot-rabbitmq
 SpringBoot2.0实战（11）整合RabbitMQ之ACK消息确认-生产者
+SpringBoot2.0实战（12）整合RabbitMQ之死信队列-生产者
 # boot-rabbitmq-consumer
 SpringBoot2.0实战（11）整合RabbitMQ之ACK消息确认-消费者
+SpringBoot2.0实战（12）整合RabbitMQ之死信队列-消费者

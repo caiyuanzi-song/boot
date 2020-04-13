@@ -74,4 +74,16 @@ public class ProviderController {
         rabbitTemplate.convertAndSend("topicExchange", "topic.woman", womanMap);
         return "ok";
     }
+
+    @RequestMapping("/sendDeadMessage")
+    public String sendDeadMessage() {
+        String messageId = String.valueOf(UUID.randomUUID());
+        String createTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        Map<String, Object> womanMap = new HashMap<>();
+        womanMap.put("messageId", messageId);
+        womanMap.put("messageData", "test dead letter queue");
+        womanMap.put("createTime", createTime);
+        rabbitTemplate.convertAndSend("TestDeadExchange", "TestDeadRouting", womanMap);
+        return "ok";
+    }
 }

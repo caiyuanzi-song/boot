@@ -1,6 +1,5 @@
 package com.cyz.boot.listener;
 
-import com.cyz.boot.bo.RetryData;
 import com.cyz.boot.config.FailedConfig;
 import com.cyz.boot.config.RetryConfig;
 import com.cyz.boot.config.WorkConfig;

@@ -1,6 +1,5 @@
 package com.cyz.boot.listener;
 
-import com.cyz.boot.bo.RetryData;
 import com.cyz.boot.config.FailedConfig;
 import com.rabbitmq.client.Channel;
 import lombok.extern.slf4j.Slf4j;

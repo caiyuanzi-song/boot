@@ -1,6 +1,5 @@
 package com.cyz.boot.controller;
 
-import com.cyz.boot.bo.RetryData;
 import com.cyz.boot.config.DelayConfig;
 import com.cyz.boot.config.WorkConfig;
 import com.cyz.boot.util.ExpirationMessagePostProcessor;

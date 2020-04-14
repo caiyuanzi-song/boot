@@ -1,5 +1,9 @@
 package com.cyz.boot.controller;
 
+import com.cyz.boot.bo.RetryData;
+import com.cyz.boot.config.DelayConfig;
+import com.cyz.boot.config.WorkConfig;
+import com.cyz.boot.util.ExpirationMessagePostProcessor;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.constraints.Max;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -86,4 +91,48 @@ public class ProviderController {
         rabbitTemplate.convertAndSend("TestDeadExchange", "TestDeadRouting", womanMap);
         return "ok";
     }
+
+    /**
+     * x-message-ttl 设置队列的过期时间
+     * @return
+     */
+    @RequestMapping("/sendDelayMessage")
+    public String sendDelayMessage(){
+        rabbitTemplate.convertAndSend(DelayConfig.DELAY_QUEUE_PER_QUEUE_TTL_NAME,"Message from delay_queue_per_queue_ttl with expiration "+DelayConfig.QUEUE_EXPIRATION);
+        return "ok";
+    }
+
+    /**
+     * 针对每条消息不同的过期时间的情况
+     * @return
+     */
+    @RequestMapping("/sendDelayMessageEx")
+    public String sendDelayMessageEx(){
+        for (int i=0;i<4;i++){
+            long expiration = i * 5000;
+            System.out.println(i + ":" + new Date().toString());
+            rabbitTemplate.convertAndSend(DelayConfig.DELAY_QUEUE_PER_QUEUE_TTL_NAME,
+                    (Object) ("Message from delay_queue_per_queue_ttl with expiration "+expiration),
+                    new ExpirationMessagePostProcessor(expiration + ""));
+        }
+        return "ok";
+    }
+
+    /**
+     * 消息重试
+     * @return
+     */
+    @RequestMapping("/sendRetryMessage")
+    public String sendRetryMessage(){
+        Map<String,Object> map = new HashMap<>();
+        map.put("id",1);
+        map.put("retry",1);
+        rabbitTemplate.convertAndSend(
+                WorkConfig.WORK_EXCHANGE,
+                WorkConfig.WORK_KEY,
+                map
+        );
+        return "ok";
+    }
+
 }

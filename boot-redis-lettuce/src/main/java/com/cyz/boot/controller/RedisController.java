@@ -1,6 +1,6 @@
 package com.cyz.boot.controller;
 
-import com.cyz.boot.RedisLockHelper;
+import com.cyz.boot.config.RedisLockHelper;
 import com.cyz.boot.dto.Book;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

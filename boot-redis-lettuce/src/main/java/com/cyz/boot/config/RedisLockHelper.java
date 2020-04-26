@@ -1,4 +1,4 @@
-package com.cyz.boot;
+package com.cyz.boot.config;
 
 import io.netty.util.internal.StringUtil;
 import lombok.extern.slf4j.Slf4j;

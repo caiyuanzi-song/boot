@@ -28,3 +28,4 @@ SpringBoot2.0实战（11）整合RabbitMQ之ACK消息确认-消费者
 SpringBoot2.0实战（12）整合RabbitMQ之死信队列-消费者
 @ boot-redis-lettuce
 SpringBoot2.0实战（13）整合Redis之初体验Lettuce
+SpringBoot2.0实战（14）整合Redis之实现分布式锁

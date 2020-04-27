@@ -32,3 +32,5 @@ SpringBoot2.0实战（14）整合Redis之实现分布式锁
 SpringBoot2.0实战（15）整合Redis之集成缓存SpringDataCache
 # boot-security
 SpringBoot2.0实战（16）整合SpringSecurity之最简登录方法鉴权
+# boot-security02
+SpringBoot2.0实战（17）整合SpringSecurity基于数据库登录鉴权

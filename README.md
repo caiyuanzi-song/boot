@@ -26,7 +26,9 @@ SpringBoot2.0实战（13）整合RabbitMQ之实现延迟队列、消息重试
 # boot-rabbitmq-consumer
 SpringBoot2.0实战（11）整合RabbitMQ之ACK消息确认-消费者
 SpringBoot2.0实战（12）整合RabbitMQ之死信队列-消费者
-@ boot-redis-lettuce
+# boot-redis-lettuce
 SpringBoot2.0实战（13）整合Redis之初体验Lettuce
 SpringBoot2.0实战（14）整合Redis之实现分布式锁
 SpringBoot2.0实战（15）整合Redis之集成缓存SpringDataCache
+# boot-security
+SpringBoot2.0实战（16）整合SpringSecurity之最简登录方法鉴权

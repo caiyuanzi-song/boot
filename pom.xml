@@ -17,6 +17,7 @@
         <module>boot-rabbitmq</module>
         <module>boot-rabbitmq-consumer</module>
         <module>boot-redis-lettuce</module>
+        <module>boot-security</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

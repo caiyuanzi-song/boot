@@ -1,7 +1,7 @@
 package com.cyz.boot.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.cyz.boot.dto.Role;
+import com.cyz.boot.domain.Role;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

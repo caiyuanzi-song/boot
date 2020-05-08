@@ -1,4 +1,4 @@
-package com.cyz.boot.dto;
+package com.cyz.boot.domain;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;

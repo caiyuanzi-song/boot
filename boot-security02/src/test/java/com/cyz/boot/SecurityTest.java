@@ -1,8 +1,8 @@
 package com.cyz.boot;
 
-import com.cyz.boot.dto.Role;
-import com.cyz.boot.dto.User;
-import com.cyz.boot.dto.UserRole;
+import com.cyz.boot.domain.Role;
+import com.cyz.boot.domain.User;
+import com.cyz.boot.domain.UserRole;
 import com.cyz.boot.mapper.RoleRepository;
 import com.cyz.boot.mapper.UserRepository;
 import com.cyz.boot.mapper.UserRoleRepository;

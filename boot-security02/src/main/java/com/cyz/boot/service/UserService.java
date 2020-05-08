@@ -2,14 +2,13 @@ package com.cyz.boot.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
-import com.cyz.boot.dto.Role;
-import com.cyz.boot.dto.User;
-import com.cyz.boot.dto.UserRole;
+import com.cyz.boot.domain.Role;
+import com.cyz.boot.domain.User;
+import com.cyz.boot.domain.UserRole;
 import com.cyz.boot.mapper.RoleRepository;
 import com.cyz.boot.mapper.UserRepository;
 import com.cyz.boot.mapper.UserRoleRepository;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
